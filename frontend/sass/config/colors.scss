@@ -1,0 +1,92 @@
+/* GENERAL COLORS */
+$color_brand    : #FE0000;
+$color_gray_light    : #b8b8b8;
+$color_gray_light_2    : #f8f8f8;
+$color_gray_dark     : #818181;
+$color_gray_dark_2    : #2c2c2c;
+$color_gray_dark_3    : #303030;
+$color_blue_default    : #1f8ffa;
+$color_blue_link    : #377df7;
+
+$color_career_group_1     : #42bffd;
+$color_career_group_2     : #ff0000;
+$color_career_group_3     : #3b3b3b;
+$color_career_group_4     : #4f9a28;
+$color_career_group_5     : #e1b316;
+$color_career_group_6     : #8f5939;
+$color_career_group_7     : #0074b6;
+$color_career_group_8     : #0f378b;
+$color_career_group_9     : #e35300;
+$color_career_group_10    : #44b900;
+$color_career_group_11    : #108876;
+$color_career_group_12    : #414141;
+$color_career_group_13    : #99489a;
+$color_career_group_14    : #633864;
+
+$color_green_default  : #007484;
+$color_yellow_default : #d2ab36;
+$color_gray_default   : #90a4ae;
+$color_red_default    : #d61516;
+$color_red            : #ff1d25;
+$color_blue_link      : #0065d3;
+
+$color_white          : #fff;
+$color_black          : #000;
+$color_very_dark_gray : #333;
+// $color_gray_light     : #e7ecee;
+$color_gray_soft      : #eceff1;
+$color_gray_cc        : #ccc;
+
+/*TEXT ALL*/
+$color_txt_dark       : #444f5a;
+$color_txt_menu       : #70a1a5;
+
+/*BACKGROUND POPUP*/
+$color_bg_popup       : rgba($color_very_dark_gray,0.8);
+
+/*COLOR MESSAGE ANSWER*/
+$color_alert          : #ff7e3a;
+$color_warning        : #990000;
+$color_successful     : #006032;
+
+$color_error_parsley  : #feeeee;
+$color_error_parsley  : #52a6e1;
+$color_error_parsley  : #f5f8fc;
+
+/*COLOR ERROR PARSLEY JS*/
+$color_parsley_bg_success     : #dff0d8;
+$color_parsley_border_success : #d6e9c6;
+$color_parsley_text_success   : #468847;
+$color_parsley_bg_error       : #f2dede;
+$color_parsley_border_error   : #eed3d7;
+$color_parsley_text_error     : #b94a48;
+$color_parsley_ph_error       : rgba(255, 0, 0, 0.5);
+
+/*BACKGROUND MENU*/
+$color_bg_green_medium  : #00525d;
+$color_bg_green_normal  : #004049;
+$color_bg_green_dark    : #003942;
+
+// $color_bg_green_dark    : #007484;
+// $color_green_default    : #008aad;
+
+
+// $color_green_default    : #00838f;
+// $color_green_default    : #008698;
+
+/*HOVER COLOR DEFAULT*/
+$color_hv_green_default : mix($color_green_default, $color_black, 80%);
+$color_hv_gray_default  : mix($color_gray_default, $color_black, 80%);
+$color_hv_red_default   : mix($color_red_default, $color_black, 85%);
+$color_hv_gray_ligth    : mix($color_gray_light, $color_black, 80%);
+$color_hv_gray_soft     : mix($color_gray_soft, $color_black, 95%);
+$color_hv_txt_dark      : mix($color_txt_dark, $color_black, 50%);
+$color_hv_menu_option   : rgba($color_black,0.2);
+
+/*COLOR ATTACHMENT*/
+$color_attachment          : $color_green_default;
+$color_attachment_text     : $color_gray_soft;
+$color_attachment_new      : #607d8b;
+$color_attachment_bg_text  : rgba($color_bg_green_dark, 0.9);
+$color_attachment_hv_ligth : rgba($color_white,0.6);
+$color_attachment_hv_dark  : rgba($color_very_dark_gray,0.1);

@@ -1,0 +1,16 @@
+script(type="text/javascript").
+    var yOSON = {
+        "module"    : "!{page.module}",
+        "controller": "!{page.controller}",
+        "action"    : "!{page.action}",
+        "baseHost"  : "!{path.base}",
+        "token"     : "!{page.token}",
+        "version"  	: "!{page.version}",
+        "AppCore"   : {},
+        "AppSandbox": {},
+        "AppSchema" : {
+            "modules" : {},
+            "requires": {}
+        },
+        "tmp" : '!{page.dataTemp}'
+    }

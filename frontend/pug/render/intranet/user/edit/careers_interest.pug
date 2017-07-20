@@ -1,0 +1,274 @@
+.careers_interest.render_center
+    .render_header
+        h3 Carreras de interés
+        h4 Seleccione hasta 4 carreras de interés
+    .panel
+        -
+            var careers = [
+                {
+                    id : 1,
+                    id_group: 1,
+                    icon: "administracion_agronegocios",
+                    name : "ADMINISTRACIÓN Y AGRONEGOCIOS"
+                },
+                {
+                    id : 2,
+                    id_group: 1,
+                    icon: "administracion_finanzas",
+                    name : "ADMINISTRACIÓN Y FINANZAS"
+                },
+                {
+                    id : 3,
+                    id_group: 1,
+                    icon: "administracion_gerencia_emprendimiento",
+                    name : "ADMINISTRACIÓN Y GERENCIA DEL EMPRENDIMIENTO"
+                },
+                {
+                    id : 4,
+                    id_group: 1,
+                    icon: "administracion_marketing",
+                    name : "ADMINISTRACIÓN Y MARKETING"
+                },
+                {
+                    id : 5,
+                    id_group: 1,
+                    icon: "administracion_negocios_deporte",
+                    name : "ADMINISTRACIÓN Y NEGOCIOS DEL DEPORTE"
+                },
+                {
+                    id : 6,
+                    id_group: 1,
+                    icon: "administracion_nnegocios_internacionales",
+                    name : "ADMINISTRACIÓN NEGOCIOS INTERNACIONALES"
+                },
+                {
+                    id : 7,
+                    id_group: 1,
+                    icon: "administracion_recursos_humanos",
+                    name : "ADMINISTRACIÓN Y RECURSOS HUMANOS"
+                },
+                {
+                    id : 8,
+                    id_group: 2,
+                    icon: "arquitectura",
+                    name : "ARQUITECTURA"
+                },
+                {
+                    id : 9,
+                    id_group: 3,
+                    icon: "artes_escenicas",
+                    name : "ARTES ESCÉNICAS"
+                },
+                {
+                    id : 10,
+                    id_group: 4,
+                    icon: "ciencias_computacion",
+                    name : "CIENCIAS DE LA COMPUTACIÓN"
+                },
+                {
+                    id : 11,
+                    id_group: 5,
+                    icon: "comunicacion_audiovisual",
+                    name : "COMUNICACIÓN AUDIOVISUAL Y MEDIOS INTERACTIVOS"
+                },
+                {
+                    id : 12,
+                    id_group: 5,
+                    icon: "comunicacion_imagen_empresarial",
+                    name : "COMUNICACIÓN E IMAGEN EMPRESARIAL"
+                },
+                {
+                    id : 13,
+                    id_group: 5,
+                    icon: "comunicacion_marketing",
+                    name : "COMUNICACIÓN Y MARKETING"
+                },
+                {
+                    id : 14,
+                    id_group: 5,
+                    icon: "comunicacion_periodismo",
+                    name : "COMUNICACIÓN Y PERIODISMO"
+                },
+                {
+                    id : 15,
+                    id_group: 5,
+                    icon: "comunicacion_publicidad",
+                    name : "COMUNICACIÓN Y PUBLICIDAD"
+                },
+                {
+                    id : 16,
+                    id_group: 1,
+                    icon: "contabilidad_administracion",
+                    name : "CONTABILIDAD Y ADMINISTRACIÓN"
+                },
+                {
+                    id : 17,
+                    id_group: 6,
+                    icon: "derecho",
+                    name : "DERECHO"
+                },
+                {
+                    id : 18,
+                    id_group: 7,
+                    icon: "diseño_profesional",
+                    name : "DISEÑO PROFESIONAL E INTERIORES"
+                },
+                {
+                    id : 19,
+                    id_group: 7,
+                    icon: "diseño_profesional_grafico",
+                    name : "DISEÑO PROFESIONAL GRÁFICO"
+                },
+                {
+                    id : 20,
+                    id_group: 7,
+                    icon: "diseño_gestion_moda",
+                    name : "DISEÑO Y GESTIÓN EN MODA"
+                },
+                {
+                    id : 21,
+                    id_group: 8,
+                    icon: "economia_general",
+                    name : "ECONOMÍA GERENCIAL"
+                },
+                {
+                    id : 22,
+                    id_group: 8,
+                    icon: "economia_finanzas",
+                    name : "ECONOMÍA Y FINANZAS"
+                },
+                {
+                    id : 23,
+                    id_group: 8,
+                    icon: "economia_negocios_internacionales",
+                    name : "ECONOMÍA Y NEGOCIOS INTERNACIONALES"
+                },
+                {
+                    id : 24,
+                    id_group: 9,
+                    icon: "educacion_gestion_aprendizaje",
+                    name : "EDUCACIÓN Y GESTIÓN DEL APRENDIZAJE"
+                },
+                {
+                    id : 25,
+                    id_group: 10,
+                    icon: "gastronomia_gestion_culinaria",
+                    name : "GASTRONOMÍA Y GESTIÓN CULINARIA"
+                },
+                {
+                    id : 26,
+                    id_group: 10,
+                    icon: "hoteleria_administracion",
+                    name : "HOTELERIA Y ADMINISTRACIÓN"
+                },
+                {
+                    id : 27,
+                    id_group: 4,
+                    icon: "ingenineria_ambiental",
+                    name : "INGENIERÍA AMBIENTAL"
+                },
+                {
+                    id : 28,
+                    id_group: 4,
+                    icon: "ingenieria_civil",
+                    name : "INGENIERÍA CIVIL"
+                },
+                {
+                    id : 29,
+                    id_group: 4,
+                    icon: "ingenieria_gestion_empresarial",
+                    name : "INGENIERÍA DE GESTIÓN EMPRESARIAL"
+                },
+                {
+                    id : 30,
+                    id_group: 4,
+                    icon: "ingenieria_gestion_minera",
+                    name : "INGENIERÍA DE GESTIÓN MINERA"
+                },
+                {
+                    id : 31,
+                    id_group: 4,
+                    icon: "ingenieria_sistemas_informacion",
+                    name : "INGENIERÍA DE SISTEMAS DE INFORMACIÓN"
+                },
+                {
+                    id : 32,
+                    id_group: 4,
+                    icon: "ingenieria_software",
+                    name : "INGENIERÍA DE SOFTWARE"
+                },
+                {
+                    id : 33,
+                    id_group: 4,
+                    icon: "ingenieria_electronica_electronica",
+                    name : "INGENIERÍA ELECTRÓNICA"
+                },
+                {
+                    id : 34,
+                    id_group: 4,
+                    icon: "ingenieria_industrial",
+                    name : "INGENIERÍA INDUSTRIAL"
+                },
+                {
+                    id : 35,
+                    id_group: 4,
+                    icon: "ingenieria_mecatronica",
+                    name : "INGENIERÍA MECATRÓNICA"
+                },
+                {
+                    id : 36,
+                    id_group: 11,
+                    icon: "medicina",
+                    name : "MEDICINA"
+                },
+                {
+                    id : 37,
+                    id_group: 12,
+                    icon: "musica",
+                    name : "MÚSICA"
+                },
+                {
+                    id : 38,
+                    id_group: 11,
+                    icon: "nutricion_dietetica",
+                    name : "NUTRICIÓN Y DIETÉTICA"
+                },
+                {
+                    id : 39,
+                    id_group: 11,
+                    icon: "odontologia",
+                    name : "ODONTOLOGÍA"
+                },
+                {
+                    id : 40,
+                    id_group: 13,
+                    icon: "psicologia",
+                    name : "PSICOLOGÍA"
+                },
+                {
+                    id : 41,
+                    id_group: 11,
+                    icon: "terapia_fisica",
+                    name : "TERAPIA FÍSICA"
+                },
+                {
+                    id : 42,
+                    id_group: 14,
+                    icon: "traduccion_interpretacion",
+                    name : "TRADUCCIÓN E INTERPRETACIÓN PERSONAL"
+                },
+                {
+                    id : 43,
+                    id_group: 4,
+                    icon: "turismo_administracion",
+                    name : "TURISMO E ADMINISTRACIÓN"
+                },                
+            ]
+        for row in careers
+            .career
+                input(type="checkbox" id!="check_career_" + row.id)
+                label.career_content(class!="group_"+row.id_group for!="check_career_" + row.id)
+                    .icon
+                        i.icon_career
+                            +icon_svg(row.icon)
+                    .title !{row.name}

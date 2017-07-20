@@ -1,0 +1,81 @@
+// FUENTES
+@include font-face("Open Sans", "../../../static/fonts/open_sans/open_sans", normal, normal,woff woff2 eot ttf svg);
+@include font-face("Open Sans", "../../../static/fonts/open_sans/open_sans_bold", bold, normal,woff woff2 eot ttf svg);
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "helvetica";
+}
+
+.page{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* FONT SIZE*/
+h1 {
+	font-size: 22px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	@include breakpoint(768px) {
+		font-size: 29px;
+	}
+	@include breakpoint(1024px) {
+		font-size: 36px;
+	}
+	@include breakpoint(1360px) {
+		font-size: 44px;
+	}
+}
+p {
+	line-height: 140%;
+	letter-spacing: 0.2px;
+	color: $color_txt_dark;
+}
+span.requerid {
+	color: $color_green_default;
+	padding-left: 5px;
+}
+table tbody td{
+	color: $color_txt_dark;
+}
+
+/* PLACEHOLDER EDIT */
+input::-webkit-input-placeholder {
+	color: $color_gray_default;
+	opacity: 1;
+}
+input:-moz-placeholder {
+	color: $color_gray_default;
+	opacity: 1;
+}
+input:-ms-input-placeholder {
+	color: $color_gray_default;
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: $color_green_default;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+i{
+	font-size: 0;
+	display: block;
+}
+
+ul.parsley-errors-list{
+	font-size: 12px;
+
+	li{
+		color: red;
+		padding-top: 5px;
+	}
+}

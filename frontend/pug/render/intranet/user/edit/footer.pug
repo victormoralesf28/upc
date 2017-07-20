@@ -1,0 +1,14 @@
+footer.render_center
+    .terms
+        input(type="checkbox" id="terms")
+        label(for="terms").checkbox
+            i.icon_selected
+                +icon_svg("selected")
+        label(for="terms")
+            | Términos y condiciones
+            p 
+                | He leído y acepto los 
+                a() términos y condiciones
+    .buttons
+        button.restart REINICIAR
+        button.finish FINALIZAR

@@ -1,0 +1,94 @@
+.data_user.render_center
+    .panel_left
+        .box_field
+            .row
+                .field.photo.row_group_left
+                    .photo_content
+                        img(src!=path.images + "intranet/user/edit/perfil.png")
+                .row_group_right 
+                    .row.field
+                        label NOMBRES
+                        input(value="Victor Angel" type="text")
+                    .row.field
+                        label APELLIDO PATERNO
+                        input(value="Morales" type="text")
+            .row
+                .row_group_left.field
+                    label GÉNERO
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select()
+                            option Masculino
+                            option Femenino
+                .row_group_right.field
+                    label APELLIDO MATERNO
+                    input(value="Flores" type="text")
+            .row
+                .field
+                    label NACIONALIDAD
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select()
+                            option Peruana
+                            option Argentina
+            .row
+                .field
+                    label TIPO DE DOCUMENTO
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select()
+                            option DNI
+                            option Carnet de Extranjería
+            .row
+                .field
+                    label NÚMERO DE DOCUMENTO
+                    input(value="76771971" type="text")
+                    
+                    
+    .panel_right
+        .box_field
+            .row
+                .field
+                    label FECHA DE NACIMIENTO
+                    input(value="01/01/2000" type="text")
+            .row
+                .field
+                    label NÚMERO DE CELULAR/CONTACTO
+                    input(value="987654321" type="text")
+            .row
+            .row
+                .field
+                    label CORREO ELECTRÓNICO
+                    input(value="victormoralesf28@gmail.com" type="text")
+                        
+        .box_field
+            .row
+                .field
+                    label.gray_dark SELECTIONA TU COLEGIO
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select.gray_dark()
+                            option Andrés de los Reyes
+                            option El Nazareno
+            .row
+                .field
+                    label.gray_dark SEDE
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select.gray_dark()
+                            option Calle ...
+            .row
+                .field
+                    label.gray_dark ¿EN QUÉ AÑO TE ENCUENTAS?
+                    .select_pretty
+                        .arrow
+                            img(src!=path.images + "all/arrow_bottom.png")
+                        select.gray_dark()
+                            option 5to de secundaria
+                            option 4to de secundaria
+                        

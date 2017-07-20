@@ -1,0 +1,11 @@
+meta(charset = meta.charset)
+title !{page.title}
+meta(name = 'viewport', content = meta.viewport)
+
+link(href!=path.css + page.module + "/" + page.controller + "/" + page.action + ".css" , media="all", rel="stylesheet", type="text/css")
+
+link(href!=page.favicon, rel="icon", type="image/vnd.microsoft.icon")
+link(href!=page.favicon, rel="shortcut icon", type="image/vnd.microsoft.icon")
+link(href!=page.favicon, rel="shortcut icon", type="image/x-icon")
+
+include /partials/all/head_scripts.pug

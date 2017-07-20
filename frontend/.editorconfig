@@ -1,0 +1,16 @@
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+[*.js]
+tab_width = 3
+
+[*.{pug,sass,scss}]
+tab_width = 4
+
+[*.md]
+trim_trailing_whitespace = false

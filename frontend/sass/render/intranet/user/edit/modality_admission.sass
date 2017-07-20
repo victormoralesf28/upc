@@ -1,0 +1,21 @@
+.modality_admission
+    margin-bottom: 55px
+    .panel
+        @include breakpoint(600px)
+            display: flex
+            justify-content: space-between
+            flex-direction: row
+
+    .modality
+        padding: 30px 20px
+        border: 2px solid $color_blue_default
+        margin-bottom: 15px
+
+        @include breakpoint(600px)
+            width: 49%
+
+        label
+            color: $color_gray_dark_2
+            font-size: 18px
+        p
+            font-size: 14px

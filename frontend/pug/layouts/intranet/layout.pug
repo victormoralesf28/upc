@@ -1,0 +1,17 @@
+include /general.pug
+
+doctype html
+html(lang=page.lang, xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#")
+    include /render/all/head.pug
+    body
+        section.page
+            include /render/all/header.pug
+            
+            include /render/all/menu_mobile.pug
+            
+            section.main_content
+                block content
+
+        //- include /partials/all/footer_scripts.pug
+        block script
+        block templates

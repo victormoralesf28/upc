@@ -1,0 +1,129 @@
+.time_pick {
+    position: relative;
+    .timepicker_wrap{
+        display: none;
+        z-index: 100;
+        background: $color_gray_soft;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12);
+
+        position: absolute;
+        top: calc(100% + 2px);
+        right: 0;
+        .time_header {
+            height: 30px;
+            background: $color_gray_light;
+        }
+        .time_body {
+            background: $color_white;
+            display: flex;
+            .time, .mins, .meridian {
+                width: 50px;
+                padding: 5px 10px;
+                .ti_tx, .mi_tx, .mer_tx {
+                    width: 100%;
+                    margin: 2px 0;
+                    text-align: center;
+                    input.timepicki-input {
+                        font-size: 14px;
+                        border: none;
+                        text-align: center;
+                        width: 100%;
+                        height: 30px;
+                        border-bottom: 2px solid transparent;
+                        outline: none;
+                        color: $color_txt_dark;
+                        &:hover{
+                            border-bottom: 2px solid $color_gray_light;
+                        }
+                        &:focus{
+                            border-bottom: 2px solid $color_green_default;
+                        }
+                    }
+                }
+                &:hover {
+                    .ti_tx, .mi_tx, .mer_tx {
+                        input.timepicki-input {
+                            border-bottom: 2px solid $color_gray_light;
+                        }
+                    }
+                }
+                .prev, .next {
+                    cursor: pointer;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    width: 30px;
+                    height: 26px;
+                    position: relative;
+                    &:hover{
+                        // background: $color_gray_soft;
+                        &:before, &:after{
+                            background: $color_green_default;
+                        }
+                    }
+                    &:before, &:after{
+                        content: '';
+                        width: 16px;
+                        height: 2px;
+                        position: absolute;
+                        left: 2px;
+                        border-radius: 3px;
+                        background: $color_gray_light;
+                    }
+                }
+                .next {
+                    &:before{
+                        transform: rotatez(45deg);
+                    }
+                    &:after{
+                        transform: rotate(-45deg);
+                        left: initial;
+                        right: 2px;
+                    }
+                }
+                .prev {
+                    &:before{
+                        transform: rotate(45deg);
+                        left: initial;
+                        right: 2px;
+                    }
+                    &:after{
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+            .points{
+                color: $color_txt_dark;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .time_footer {
+            a.reset_time {
+                height: 30px;
+                padding: 0 10px;
+                background: $color_gray_light;
+                border-left: 2px solid $color_gray_soft;
+                outline: none;
+
+                display: flex;
+                align-items: center;
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                &:hover, &:focus {
+                    background: $color_gray_light;
+                }
+                &::after {
+                    content: "Limpiar";
+                    color: $color_black;
+                }
+                .icon_reset {
+                    display: none;
+                }
+            }
+        }
+    }
+}
