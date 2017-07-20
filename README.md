@@ -6,4 +6,4 @@
   - cd upc/frontend
   - npm install
   - gulp
-Las vistas se encuentran dentro de la carpeta public
+###### Las vistas se encuentran dentro de la carpeta public
