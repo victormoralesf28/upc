@@ -5,14 +5,16 @@
     
     .panel
         .modality
-            //- input ---
-            .modality_text
-                label Admisión preferente
-                p Si en el colegio obtuviste un promedio mayor o igual a 15.
+            input(type="radio" id="modality_prefer" name="modality")
+            label.radio(for="modality_prefer")
+                .modality_text
+                    label(for="modality_prefer") Admisión preferente
+                    p Si en el colegio obtuviste un promedio mayor o igual a 15.
         
         .modality
-            //- input ---
-            .modality_text
-                label Admisión regular
-                p Si estás en 5to o ya terminaste el colegio y estás listo para postular.
+            input(type="radio" id="modality_regular" name="modality")
+            label.radio(for="modality_regular")
+                .modality_text
+                    label(for="modality_regular") Admisión regular
+                    p Si estás en 5to o ya terminaste el colegio y estás listo para postular.
         

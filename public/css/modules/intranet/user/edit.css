@@ -458,6 +458,7 @@ ul.parsley-errors-list {
     position: absolute;
     right: 5px;
     top: 0;
+    height: 100%;
     padding-left: 5px;
     background: white;
     pointer-events: none;
@@ -520,13 +521,14 @@ header {
           padding-right: 20px;
           display: block; } }
     header nav i {
-      width: 50px; }
+      width: 50px;
+      height: 50px; }
       header nav i svg path {
         fill: #fff; }
     header nav .icon_menu {
       padding: 10px; }
   header .title h2 {
-    font-family: cursive;
+    font-family: "sans-serif";
     color: white;
     position: relative;
     font-size: 28px; }
@@ -656,18 +658,27 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; } }
-  .modality_admission .modality {
-    padding: 30px 20px;
-    border: 2px solid #1f8ffa;
-    margin-bottom: 15px; }
-    @media (min-width: 600px) {
-      .modality_admission .modality {
-        width: 49%; } }
-    .modality_admission .modality label {
-      color: #2c2c2c;
-      font-size: 18px; }
-    .modality_admission .modality p {
-      font-size: 14px; }
+  .modality_admission .modality .modality_text {
+    padding: 30px 20px; }
+  .modality_admission .modality label.radio {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    border: 2px solid #b8b8b8; }
+  .modality_admission .modality input[type=radio] {
+    visibility: hidden;
+    height: 0;
+    width: 0; }
+    .modality_admission .modality input[type=radio]:checked + label.radio {
+      border: 2px solid #1f8ffa; }
+  @media (min-width: 600px) {
+    .modality_admission .modality {
+      width: 49%; } }
+  .modality_admission .modality label {
+    color: #2c2c2c;
+    font-size: 18px; }
+  .modality_admission .modality p {
+    font-size: 14px; }
 
 .careers_interest .panel {
   display: -webkit-box;
@@ -735,7 +746,8 @@ header {
             justify-content: center;
     padding-bottom: 10px; }
     .careers_interest .career .icon > i {
-      width: 30%; }
+      width: 30%;
+      height: 52px; }
   .careers_interest .career .title {
     font-size: 10px;
     text-align: center;
@@ -854,6 +866,8 @@ footer .terms {
     width: 30px;
     height: 30px; }
     footer .terms .checkbox .icon_selected {
+      width: 30px;
+      height: 30px;
       display: none; }
       footer .terms .checkbox .icon_selected svg path {
         fill: #303030; }

@@ -7,9 +7,21 @@
             flex-direction: row
 
     .modality
-        padding: 30px 20px
-        border: 2px solid $color_blue_default
-        margin-bottom: 15px
+        .modality_text
+            padding: 30px 20px
+        label.radio
+            cursor: pointer
+            display: block
+            height: 100%
+            border: 2px solid $color_gray_light
+
+        input[type=radio]
+            visibility: hidden
+            height: 0
+            width: 0
+
+            &:checked + label.radio
+                border: 2px solid $color_blue_default
 
         @include breakpoint(600px)
             width: 49%
